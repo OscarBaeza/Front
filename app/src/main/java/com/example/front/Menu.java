@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class Menu extends AppCompatActivity {
     Button btnEntrar;
+    Button btnSal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,5 +24,16 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnSal = (Button) findViewById(R.id.btnSal);
+        btnSal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finishAffinity();
+                System.exit(0);
+            }
+        });
+
+
     }
 }

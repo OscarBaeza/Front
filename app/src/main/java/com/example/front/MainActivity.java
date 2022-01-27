@@ -2,7 +2,7 @@ package com.example.front;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatSpinner;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     List<String> teamList = new ArrayList<>();
     ArrayList<Cricketer> cricketersList = new ArrayList<>();
     //
-    ArrayList<Integer> equipos = new ArrayList<>();
-    public int numeros = 1;
-    public int conteo=0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
